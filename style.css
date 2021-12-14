@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF;
+    font-family: "Rubik", sans-serif;
+}
+
+main{
+    display: block;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.login{
+    box-shadow: 0 20px 30px 10px rgb(150 170 180 / 50%);
+}
+.login,
+.signUp{
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;    
+    height: auto;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+h1{
+    font-size: 40px;
+    color: #2f2f2f;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: normal;
+    color: #2f2f2f;
+}
+
+.login form{
+    margin-top: 30px;
+    padding: 20px 20px 0 20px;
+}
+
+fieldset{
+    border: none;
+}
+
+.formRow{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login .formLabel{
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #555;
+}
+.signUp .formLabel{
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+.formInput{
+    border: 0;
+    height: 40px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formInput:focus{
+    outline: none;
+}
+
+.rowCheck{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowCheck a{
+    color: rgb(255, 117, 4);
+}
+
+.formCheck #remenberMe{
+    display: none;
+}
+
+.formCheck #remenberMe + label::before{
+    color:transparent;
+    content: "✔";
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;    
+    border: 1px solid #e2e2e2;
+    margin-right: 5px;
+    vertical-align: bottom;
+    text-align: center;
+    line-height: 16px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+    
+    
+}
+
+.formCheck #remenberMe + label:active::before{
+    transform: scale(2);
+}
+
+.formCheck #remenberMe:checked + label::before {
+    background-color: rgb(255, 117, 4);
+    border-color: rgb(255, 117, 4);
+    color: white;
+  }
+
+.formCheck #rememberMe, 
+.formCheck label{ 
+    cursor: pointer;
+}
+
+.formCheck label,
+a{
+    font-size: 16px;
+}
+
+.formCheck label{
+    color: #555;
+}
+
+.login .buttonLogin{
+    display: flex;
+    margin-top: 50px;
+    background: rgb(255, 117, 4);
+    border-radius: 3px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 45px;
+    transition: 0.2s;
+}
+
+.signUp{
+    transform: scale(1.01);
+    background-image: linear-gradient(109.6deg, rgb(255, 84, 4) 11.2%, rgb(255, 115, 0));
+}
+
+.signUp form{
+    margin-top: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.signUp .buttonCreate{
+    display: flex;
+    margin-top: 50px;
+    border: 0;
+    background-color: #f1f1f1;
+    padding: 15px 45px;
+    font-size: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #555
+}
+
+.login .buttonLogin:hover,
+.signUp .buttonCreate:hover{
+    transform: translateY(-2px);
+} 
+
+.signUp .createAccount{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
